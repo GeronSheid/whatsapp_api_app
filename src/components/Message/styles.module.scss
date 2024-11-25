@@ -1,0 +1,16 @@
+.message {
+    max-width: 30%;
+    width: fit-content;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 25px;
+    &_out {
+        background-color: green;
+        align-self: flex-end;
+    }
+    &_in {
+        background-color: #333;
+    }
+}

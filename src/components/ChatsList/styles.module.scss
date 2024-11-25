@@ -1,0 +1,19 @@
+.chatsListWrap {
+    flex: 1 0 auto;
+    background-color: rgb(32, 44, 51);
+    overflow-y: scroll;
+    scrollbar-width: none; /* Убираем полосу в Firefox */
+    -ms-overflow-style: none; /* Убираем полосу в IE и Edge */
+    &::-webkit-scrollbar {
+        display: none; /* Убираем полосу в Chrome, Safari, Opera */
+    }
+    & > ul {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+}
+
+.chatsList {
+    padding: 20px 15px;
+}

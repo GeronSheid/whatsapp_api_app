@@ -1,0 +1,28 @@
+.item {
+    max-height: 40px;
+    height: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #ffffff3f;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    &_active {
+        background-color: #333;
+    }
+    &:hover {
+        background-color: #333;
+        color: rgb(12, 184, 12);
+    }
+    cursor: pointer;
+}
+
+
+.phone {
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.message {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 20px;
+}

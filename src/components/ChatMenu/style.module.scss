@@ -1,0 +1,29 @@
+.header {
+    max-height: 60px;
+    height: 100%;
+    display: flex;
+    padding: 15px 25px;
+    background-color: rgb(32, 44, 51);
+    border-bottom: 1px solid #ffffff4f;
+}
+
+.headerWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    // padding: 10px;
+    cursor: pointer;
+}
