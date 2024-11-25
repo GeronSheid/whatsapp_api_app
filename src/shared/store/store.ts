@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import messages from '../messagesApi';
 
 export interface IChat {
     phoneNumber: string,
@@ -34,7 +33,13 @@ const useStore = create<IUserStore>((set, get) => ({
     currentChat: '',
     setIdInstance: (newId) => set(state => ({ idInstance: newId })),
     setApiTokenInstance: (newApiToken) => set(state => ({ apiTokenInstance: newApiToken })),
-    addNewChat: (phoneNumber) => set(state => ({ chatsList: [...state.chatsList, { phoneNumber, messages: [] }] })),
+    addNewChat: (phoneNumber) => set((state) => {
+        const isUnique = !state.chatsList.some((chat) => chat.phoneNumber === phoneNumber);
+        if (isUnique) {
+            return { chatsList: [...state.chatsList, { phoneNumber, messages: [] }] };
+        }
+        return state;
+    }),
     getChat: (chatId) => get().chatsList.find(state => state.phoneNumber === chatId),
     setCurrentChat: (currChat) => set(state => ({ currentChat: currChat })),
     addMessageToList: (chatId, message) => set(state => ({

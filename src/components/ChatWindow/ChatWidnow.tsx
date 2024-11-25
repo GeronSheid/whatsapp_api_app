@@ -13,8 +13,6 @@ const ChatWidnow = () => {
     const chat = useStore(state => state.chatsList.find(chat => chat.phoneNumber === currentChat));
     const idInstance = useStore(state => state.idInstance);
     const apiTokenInstance = useStore(state => state.apiTokenInstance);
-    // const idInstance = '7103153865';
-    // const apiTokenInstance = '606259558ea6414f8dd41a0ad37884937f75a3a1107d48faa8';
 
     useEffect(() => {
         if(!currentChat) return

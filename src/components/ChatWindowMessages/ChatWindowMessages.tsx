@@ -16,7 +16,8 @@ const ChatWindowMessages: React.FC<ChatWindowMessagesProps> = ({ messages }) => 
                     messageText={message.messageText}
                     messageId={message.messageId}
                     chatId={message.chatId}
-                    sender={message?.sender} />)}
+                    sender={message?.sender} 
+                />)}
         </div>
     )
 }

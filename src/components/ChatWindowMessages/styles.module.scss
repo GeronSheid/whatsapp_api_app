@@ -1,7 +1,14 @@
 .window {
     padding: 25px;
-    flex: 1 0 auto;
+    flex: 1 0;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
