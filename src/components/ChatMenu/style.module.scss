@@ -24,6 +24,13 @@
     outline: none;
     background-color: transparent;
     color: #fff;
-    // padding: 10px;
     cursor: pointer;
+    svg {
+        transition: fill .3s ease-in;
+    }
+    &:hover {
+        svg {
+            fill: green;
+        }
+    }
 }

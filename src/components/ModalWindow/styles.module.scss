@@ -27,5 +27,9 @@
         font-size: 18px;
         font-weight: 500;
         cursor: pointer;
+        transition: color .3s ease-in;
+        &:hover {
+            color: green;
+        }
     }
 }

@@ -31,7 +31,7 @@ const PhoneForm: React.FC<PhoneFormProps> = ({closeFunction}) => {
     return (
         <form className={styles.form} onSubmit={(e) => handlePhoneNumber(e)}>
             {error && <span>{error}</span>}
-            <Input value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}/>
+            <Input value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} placeholder='Введите телефон'/>
             <Button>Начать чат</Button>
         </form>
     )
